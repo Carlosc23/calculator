@@ -1,0 +1,31 @@
+.number-div li {
+  list-style: none;
+  float: left;
+  width: 52px;
+  background: white;
+  margin: 9px 10px;
+  padding: 10px;
+  border-bottom: 4px solid #828A9B;
+  border-radius: 5px;
+  color: #888888;
+  text-align: center;
+  transition: .2s;
+  cursor: pointer;
+}
+
+.number-div li:hover {
+  background: #44B3C2;
+  border-bottom: 4px solid #336699;
+  color: white;
+}
+
+#equals {
+  background: #F43341;
+  color: white;
+}
+
+#equals:hover {
+  background: #FE5E6A;
+  border-bottom: 4px solid #B3232E;
+  color: white;
+}
