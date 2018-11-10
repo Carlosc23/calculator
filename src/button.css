@@ -29,3 +29,23 @@
   border-bottom: 4px solid #B3232E;
   color: white;
 }
+#equals2 {
+  background: #828A9B;
+  color: white;
+}
+
+#equals2:hover {
+  background: #9097a6;
+  border-bottom: 4px solid #9097a6;
+  color: white;
+}
+#equals3 {
+  background: #4378e8;
+  color: white;
+}
+
+#equals3:hover {
+  background: #5a88eb;
+  border-bottom: 4px solid #5a88eb;
+  color: white;
+}
