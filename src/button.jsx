@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
-import './button.css'
-export default class screen extends Component {
+import './button.css';
+import myObject from './utils/changeScreen';
+export default class button extends Component {
+
+
 render() {
+
   return(
 
-    <ul class="number-div">
+    <ul className="number-div">
     <li id="equals3">C</li>
-    <li>⁺∕₋</li>
+    <li onClick={(e) => {myObject.updateText("-")}}>⁺∕₋</li>
     <li>%</li>
 						<li>del</li>	             <li>7</li>
 										 <li>8</li>
