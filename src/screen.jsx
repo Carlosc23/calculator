@@ -5,14 +5,14 @@ export default class screen extends Component {
   constructor(props) {
       super(props)
       this.state = {
-          text: "Initial State"
+          currentText: ""
       }
      myObject.updateText = myObject.updateText.bind(this)
   }
 render() {
   return(
 
-    <div className="screen">{this.state.text}</div>
+    <div className="screen">{this.state.currentText}</div>
   );
 }
 
