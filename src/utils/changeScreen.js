@@ -21,7 +21,6 @@ function updateText(text) {
   } else if (text === 'del') {
     currentText = currentText.substring(0, currentText.length - 4);
   } else if (text === '=') {
-
     currentText = currentText.substring(0, currentText.length - 1);
     currentText = currentText.replace('x', '*');
     currentText = currentText.replace('÷', '/');
@@ -42,7 +41,6 @@ function updateText(text) {
     currentText = currentText.substring(0, currentText.length - 1);
     flag = false;
   }
-  //temp2+=text;
   if (flag2) {
     temp2 += text;
     currentText = temp2;
