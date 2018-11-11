@@ -10,19 +10,19 @@ render() {
 
       <ul className="number-div">{
          buttons.map((num,key) => {
-           if(num=="C"){
+           if(num==="C"){
              console.log(num);
              return  <li value={num} onClick={(e) => {myObject.updateText("")}} id="equals3" key={num}  >{num}</li>
            }
-           else if (num=="="){
+           else if (num==="="){
              console.log(num);
                 return  <li onClick={(e) => {myObject.updateText(num)}} id="equals" key={num} >{num}</li>
            }
-           else if(num=="÷"||num=="x"||num=="-"||num=="+"){
+           else if(num==="÷"||num==="x"||num==="-"||num==="+"){
              console.log(num);
                  return  <li onClick={(e) => {myObject.updateText(num)}} id="equals2" key={num} >{num}</li>
            }
-           else if(num=="⁺∕₋"){
+           else if(num==="⁺∕₋"){
              return  <li   key={num}  >{num}</li>
            }
 

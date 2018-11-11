@@ -40,7 +40,7 @@ function updateText(text) {
   }
   console.log(currentText);
   if (currentText.length >= 9) {
-    currentText = currentText.substring(0, 9)
+    currentText = currentText.substring(0, 9);
   }
   temp = currentText;
   if (flag) {
@@ -60,4 +60,4 @@ function updateText(text) {
 
 export default {
   updateText
-}
+};
