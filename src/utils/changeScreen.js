@@ -6,7 +6,7 @@ let temp = '';
 function updateText(text) {
   currentText = temp;
   let last = text;
-  if (last == '÷' || last == 'x' || last == '-' || last == '+' || last == '%') {
+  if (last === '÷' || last === 'x' || last === '-' || last === '+' || last === '%') {
     console.log('flag');
     flag = true;
   }
@@ -14,17 +14,17 @@ function updateText(text) {
   last = currentText.slice(-1);
   console.log(currentText);
   console.log('last' + last);
-  if (last == '÷' || last == 'x' || last == '-' || last == '+' || last == '%') {
+  if (last === '÷' || last === 'x' || last === '-' || last === '+' || last === '%') {
     console.log('flag2');
     flag2 = true;
   }
   currentText += text;
   console.log(text);
-  if (text == '') {
+  if (text === '') {
     currentText = '';
-  } else if (text == 'del') {
+  } else if (text === 'del') {
     currentText = currentText.substring(0, currentText.length - 4);
-  } else if (text == '=') {
+  } else if (text === '=') {
 
     currentText = currentText.substring(0, currentText.length - 1);
     console.log(currentText);
@@ -54,7 +54,7 @@ function updateText(text) {
   }
   this.setState({
     currentText
-  })
+  });
   //  console.log('this')
 }
 
