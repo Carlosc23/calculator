@@ -1,8 +1,9 @@
+/* eslint no-eval: 0 */
 let currentText = '';
 let flag = false;
 let flag2 = false;
 let temp = '';
-
+let temp2 ='';
 function updateText(text) {
   currentText = temp;
   let last = text;
@@ -10,7 +11,6 @@ function updateText(text) {
     console.log('flag');
     flag = true;
   }
-  console.log(currentText);
   last = currentText.slice(-1);
   console.log(currentText);
   console.log('last' + last);
@@ -35,6 +35,7 @@ function updateText(text) {
       currentText = 'Math Error';
     }
     currentText = currentText.toString();
+    temp2 = '';
   } else if (currentText.includes('Error')) {
     currentText = '';
   }
@@ -48,10 +49,17 @@ function updateText(text) {
     currentText = currentText.substring(0, currentText.length - 1);
     flag = false;
   }
+  //temp2+=text;
   if (flag2) {
-    currentText = text;
+    temp2 += text;
+    currentText = temp2;
     flag2 = false;
   }
+
+    if(currentText.toString().includes('÷')||currentText.toString().includes('x')||currentText.toString().includes('-')||currentText.toString().includes('+')||currentText.toString().includes('%')){
+      temp2 += text;
+      currentText = temp2;
+    }
   this.setState({
     currentText
   });
